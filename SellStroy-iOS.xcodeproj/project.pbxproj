@@ -18,6 +18,7 @@
 		395EC1A628E9D33C00F32840 /* HallOfFameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC1A528E9D33C00F32840 /* HallOfFameViewController.swift */; };
 		395EC1A928E9D37000F32840 /* RequestExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC1A828E9D37000F32840 /* RequestExperienceViewController.swift */; };
 		395EC1AB28E9D38B00F32840 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC1AA28E9D38B00F32840 /* SearchViewController.swift */; };
+		395EC1AD28E9E09600F32840 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC1AC28E9E09600F32840 /* Colors.swift */; };
 		3EC8A957FE2D134EC0410718 /* Pods_SellStroy_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331991FF239262C470281525 /* Pods_SellStroy_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		395EC1A528E9D33C00F32840 /* HallOfFameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallOfFameViewController.swift; sourceTree = "<group>"; };
 		395EC1A828E9D37000F32840 /* RequestExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExperienceViewController.swift; sourceTree = "<group>"; };
 		395EC1AA28E9D38B00F32840 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		395EC1AC28E9E09600F32840 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		F0BBC578FE292801DC294ED7 /* Pods-SellStroy-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellStroy-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SellStroy-iOS/Pods-SellStroy-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +151,7 @@
 		395EC19C28E9D15600F32840 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				395EC1AC28E9E09600F32840 /* Colors.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				395EC1AB28E9D38B00F32840 /* SearchViewController.swift in Sources */,
+				395EC1AD28E9E09600F32840 /* Colors.swift in Sources */,
 				395EC19628E9D0F100F32840 /* LoginViewController.swift in Sources */,
 				395EC1A028E9D2A300F32840 /* MyPageViewController.swift in Sources */,
 				395EC1A228E9D2FA00F32840 /* HomeTabBarController.swift in Sources */,
