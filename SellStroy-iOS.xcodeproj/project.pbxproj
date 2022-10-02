@@ -10,6 +10,14 @@
 		395EC17A28E88C1E00F32840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC17928E88C1E00F32840 /* AppDelegate.swift */; };
 		395EC17E28E88C1E00F32840 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC17D28E88C1E00F32840 /* MainViewController.swift */; };
 		395EC18328E88C2000F32840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395EC18228E88C2000F32840 /* Assets.xcassets */; };
+		395EC19328E9CEA400F32840 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC19228E9CEA400F32840 /* HomeViewController.swift */; };
+		395EC19628E9D0F100F32840 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC19528E9D0F100F32840 /* LoginViewController.swift */; };
+		395EC19928E9D13B00F32840 /* WriteExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC19828E9D13B00F32840 /* WriteExperienceViewController.swift */; };
+		395EC1A028E9D2A300F32840 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC19F28E9D2A300F32840 /* MyPageViewController.swift */; };
+		395EC1A228E9D2FA00F32840 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC1A128E9D2FA00F32840 /* HomeTabBarController.swift */; };
+		395EC1A628E9D33C00F32840 /* HallOfFameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC1A528E9D33C00F32840 /* HallOfFameViewController.swift */; };
+		395EC1A928E9D37000F32840 /* RequestExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC1A828E9D37000F32840 /* RequestExperienceViewController.swift */; };
+		395EC1AB28E9D38B00F32840 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC1AA28E9D38B00F32840 /* SearchViewController.swift */; };
 		3EC8A957FE2D134EC0410718 /* Pods_SellStroy_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331991FF239262C470281525 /* Pods_SellStroy_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +29,14 @@
 		395EC17D28E88C1E00F32840 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		395EC18228E88C2000F32840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		395EC18728E88C2000F32840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		395EC19228E9CEA400F32840 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		395EC19528E9D0F100F32840 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		395EC19828E9D13B00F32840 /* WriteExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteExperienceViewController.swift; sourceTree = "<group>"; };
+		395EC19F28E9D2A300F32840 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		395EC1A128E9D2FA00F32840 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		395EC1A528E9D33C00F32840 /* HallOfFameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallOfFameViewController.swift; sourceTree = "<group>"; };
+		395EC1A828E9D37000F32840 /* RequestExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExperienceViewController.swift; sourceTree = "<group>"; };
+		395EC1AA28E9D38B00F32840 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F0BBC578FE292801DC294ED7 /* Pods-SellStroy-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellStroy-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SellStroy-iOS/Pods-SellStroy-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,12 +73,124 @@
 		395EC17828E88C1E00F32840 /* SellStroy-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				395EC17928E88C1E00F32840 /* AppDelegate.swift */,
-				395EC17D28E88C1E00F32840 /* MainViewController.swift */,
-				395EC18228E88C2000F32840 /* Assets.xcassets */,
+				395EC19028E9CE6400F32840 /* ViewModel */,
+				395EC18E28E9CE5600F32840 /* Model */,
+				395EC18D28E9CE4D00F32840 /* Controller */,
+				395EC19C28E9D15600F32840 /* Common */,
+				395EC19E28E9D27000F32840 /* ApplicationDelegate */,
+				395EC19D28E9D15F00F32840 /* Utils */,
 				395EC18728E88C2000F32840 /* Info.plist */,
 			);
 			path = "SellStroy-iOS";
+			sourceTree = "<group>";
+		};
+		395EC18D28E9CE4D00F32840 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				395EC17D28E88C1E00F32840 /* MainViewController.swift */,
+				395EC19428E9D0E400F32840 /* Login */,
+				395EC19128E9CE9000F32840 /* Home */,
+				395EC1A328E9D30700F32840 /* Search */,
+				395EC1A428E9D32400F32840 /* Hall of Fame */,
+				395EC1A728E9D35200F32840 /* Request Experience */,
+				395EC19A28E9D14400F32840 /* MyPage */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		395EC18E28E9CE5600F32840 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		395EC19028E9CE6400F32840 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		395EC19128E9CE9000F32840 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				395EC1A128E9D2FA00F32840 /* HomeTabBarController.swift */,
+				395EC19728E9D11400F32840 /* WriteExperience */,
+				395EC19228E9CEA400F32840 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		395EC19428E9D0E400F32840 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				395EC19528E9D0F100F32840 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		395EC19728E9D11400F32840 /* WriteExperience */ = {
+			isa = PBXGroup;
+			children = (
+				395EC19828E9D13B00F32840 /* WriteExperienceViewController.swift */,
+			);
+			path = WriteExperience;
+			sourceTree = "<group>";
+		};
+		395EC19A28E9D14400F32840 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				395EC19F28E9D2A300F32840 /* MyPageViewController.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		395EC19C28E9D15600F32840 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		395EC19D28E9D15F00F32840 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				395EC18228E88C2000F32840 /* Assets.xcassets */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		395EC19E28E9D27000F32840 /* ApplicationDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				395EC17928E88C1E00F32840 /* AppDelegate.swift */,
+			);
+			path = ApplicationDelegate;
+			sourceTree = "<group>";
+		};
+		395EC1A328E9D30700F32840 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				395EC1AA28E9D38B00F32840 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		395EC1A428E9D32400F32840 /* Hall of Fame */ = {
+			isa = PBXGroup;
+			children = (
+				395EC1A528E9D33C00F32840 /* HallOfFameViewController.swift */,
+			);
+			path = "Hall of Fame";
+			sourceTree = "<group>";
+		};
+		395EC1A728E9D35200F32840 /* Request Experience */ = {
+			isa = PBXGroup;
+			children = (
+				395EC1A828E9D37000F32840 /* RequestExperienceViewController.swift */,
+			);
+			path = "Request Experience";
 			sourceTree = "<group>";
 		};
 		98974275C605D550EF661409 /* Frameworks */ = {
@@ -79,7 +207,6 @@
 				F0BBC578FE292801DC294ED7 /* Pods-SellStroy-iOS.debug.xcconfig */,
 				1587F02214F5CE37CA1229DF /* Pods-SellStroy-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -196,8 +323,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395EC1AB28E9D38B00F32840 /* SearchViewController.swift in Sources */,
+				395EC19628E9D0F100F32840 /* LoginViewController.swift in Sources */,
+				395EC1A028E9D2A300F32840 /* MyPageViewController.swift in Sources */,
+				395EC1A228E9D2FA00F32840 /* HomeTabBarController.swift in Sources */,
+				395EC19928E9D13B00F32840 /* WriteExperienceViewController.swift in Sources */,
 				395EC17E28E88C1E00F32840 /* MainViewController.swift in Sources */,
 				395EC17A28E88C1E00F32840 /* AppDelegate.swift in Sources */,
+				395EC19328E9CEA400F32840 /* HomeViewController.swift in Sources */,
+				395EC1A628E9D33C00F32840 /* HallOfFameViewController.swift in Sources */,
+				395EC1A928E9D37000F32840 /* RequestExperienceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
