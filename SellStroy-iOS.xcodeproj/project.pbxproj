@@ -19,6 +19,17 @@
 		395EC1A928E9D37000F32840 /* RequestExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC1A828E9D37000F32840 /* RequestExperienceViewController.swift */; };
 		395EC1AB28E9D38B00F32840 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC1AA28E9D38B00F32840 /* SearchViewController.swift */; };
 		395EC1AD28E9E09600F32840 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC1AC28E9E09600F32840 /* Colors.swift */; };
+		39BA1EBF28EC8066007D1001 /* NSAttributeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EBE28EC8066007D1001 /* NSAttributeString.swift */; };
+		39BA1EC528EC815D007D1001 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39BA1EC128EC815D007D1001 /* Pretendard-Medium.otf */; };
+		39BA1EC628EC815D007D1001 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39BA1EC228EC815D007D1001 /* Pretendard-Bold.otf */; };
+		39BA1EC728EC815D007D1001 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39BA1EC328EC815D007D1001 /* Pretendard-Regular.otf */; };
+		39BA1EC828EC815D007D1001 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39BA1EC428EC815D007D1001 /* Pretendard-SemiBold.otf */; };
+		39BA1ECA28EC8475007D1001 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EC928EC8475007D1001 /* Extensions.swift */; };
+		39BA1ECC28EC8490007D1001 /* Ratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1ECB28EC8490007D1001 /* Ratio.swift */; };
+		39BA1ED028EC902D007D1001 /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1ECF28EC902D007D1001 /* ExperienceTableViewCell.swift */; };
+		39BA1ED228EC96DB007D1001 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1ED128EC96DB007D1001 /* Singleton.swift */; };
+		39BA1ED528EC98A9007D1001 /* CategoryBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1ED428EC98A9007D1001 /* CategoryBadgeView.swift */; };
+		39BA1ED728EC98D7007D1001 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1ED628EC98D7007D1001 /* Constant.swift */; };
 		3EC8A957FE2D134EC0410718 /* Pods_SellStroy_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331991FF239262C470281525 /* Pods_SellStroy_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +50,17 @@
 		395EC1A828E9D37000F32840 /* RequestExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExperienceViewController.swift; sourceTree = "<group>"; };
 		395EC1AA28E9D38B00F32840 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		395EC1AC28E9E09600F32840 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		39BA1EBE28EC8066007D1001 /* NSAttributeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributeString.swift; sourceTree = "<group>"; };
+		39BA1EC128EC815D007D1001 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		39BA1EC228EC815D007D1001 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		39BA1EC328EC815D007D1001 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		39BA1EC428EC815D007D1001 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		39BA1EC928EC8475007D1001 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		39BA1ECB28EC8490007D1001 /* Ratio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratio.swift; sourceTree = "<group>"; };
+		39BA1ECF28EC902D007D1001 /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
+		39BA1ED128EC96DB007D1001 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		39BA1ED428EC98A9007D1001 /* CategoryBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBadgeView.swift; sourceTree = "<group>"; };
+		39BA1ED628EC98D7007D1001 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F0BBC578FE292801DC294ED7 /* Pods-SellStroy-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellStroy-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SellStroy-iOS/Pods-SellStroy-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +99,8 @@
 			children = (
 				395EC19028E9CE6400F32840 /* ViewModel */,
 				395EC18E28E9CE5600F32840 /* Model */,
-				395EC18D28E9CE4D00F32840 /* Controller */,
+				395EC18D28E9CE4D00F32840 /* View */,
+				39BA1ED328EC986D007D1001 /* Custom Class */,
 				395EC19C28E9D15600F32840 /* Common */,
 				395EC19E28E9D27000F32840 /* ApplicationDelegate */,
 				395EC19D28E9D15F00F32840 /* Utils */,
@@ -86,18 +109,14 @@
 			path = "SellStroy-iOS";
 			sourceTree = "<group>";
 		};
-		395EC18D28E9CE4D00F32840 /* Controller */ = {
+		395EC18D28E9CE4D00F32840 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				395EC17D28E88C1E00F32840 /* MainViewController.swift */,
 				395EC19428E9D0E400F32840 /* Login */,
-				395EC19128E9CE9000F32840 /* Home */,
-				395EC1A328E9D30700F32840 /* Search */,
-				395EC1A428E9D32400F32840 /* Hall of Fame */,
-				395EC1A728E9D35200F32840 /* Request Experience */,
-				395EC19A28E9D14400F32840 /* MyPage */,
+				39BA1ECE28EC8FD9007D1001 /* TabBar */,
 			);
-			path = Controller;
+			path = View;
 			sourceTree = "<group>";
 		};
 		395EC18E28E9CE5600F32840 /* Model */ = {
@@ -117,9 +136,9 @@
 		395EC19128E9CE9000F32840 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				395EC1A128E9D2FA00F32840 /* HomeTabBarController.swift */,
-				395EC19728E9D11400F32840 /* WriteExperience */,
 				395EC19228E9CEA400F32840 /* HomeViewController.swift */,
+				39BA1ECF28EC902D007D1001 /* ExperienceTableViewCell.swift */,
+				395EC19728E9D11400F32840 /* WriteExperience */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -152,6 +171,11 @@
 			isa = PBXGroup;
 			children = (
 				395EC1AC28E9E09600F32840 /* Colors.swift */,
+				39BA1EBE28EC8066007D1001 /* NSAttributeString.swift */,
+				39BA1EC928EC8475007D1001 /* Extensions.swift */,
+				39BA1ECB28EC8490007D1001 /* Ratio.swift */,
+				39BA1ED128EC96DB007D1001 /* Singleton.swift */,
+				39BA1ED628EC98D7007D1001 /* Constant.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -159,6 +183,7 @@
 		395EC19D28E9D15F00F32840 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				39BA1EC028EC811E007D1001 /* Fonts */,
 				395EC18228E88C2000F32840 /* Assets.xcassets */,
 			);
 			path = Utils;
@@ -194,6 +219,38 @@
 				395EC1A828E9D37000F32840 /* RequestExperienceViewController.swift */,
 			);
 			path = "Request Experience";
+			sourceTree = "<group>";
+		};
+		39BA1EC028EC811E007D1001 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				39BA1EC228EC815D007D1001 /* Pretendard-Bold.otf */,
+				39BA1EC128EC815D007D1001 /* Pretendard-Medium.otf */,
+				39BA1EC328EC815D007D1001 /* Pretendard-Regular.otf */,
+				39BA1EC428EC815D007D1001 /* Pretendard-SemiBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		39BA1ECE28EC8FD9007D1001 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				395EC1A128E9D2FA00F32840 /* HomeTabBarController.swift */,
+				395EC19128E9CE9000F32840 /* Home */,
+				395EC1A328E9D30700F32840 /* Search */,
+				395EC1A428E9D32400F32840 /* Hall of Fame */,
+				395EC1A728E9D35200F32840 /* Request Experience */,
+				395EC19A28E9D14400F32840 /* MyPage */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		39BA1ED328EC986D007D1001 /* Custom Class */ = {
+			isa = PBXGroup;
+			children = (
+				39BA1ED428EC98A9007D1001 /* CategoryBadgeView.swift */,
+			);
+			path = "Custom Class";
 			sourceTree = "<group>";
 		};
 		98974275C605D550EF661409 /* Frameworks */ = {
@@ -274,6 +331,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				395EC18328E88C2000F32840 /* Assets.xcassets in Resources */,
+				39BA1EC728EC815D007D1001 /* Pretendard-Regular.otf in Resources */,
+				39BA1EC828EC815D007D1001 /* Pretendard-SemiBold.otf in Resources */,
+				39BA1EC628EC815D007D1001 /* Pretendard-Bold.otf in Resources */,
+				39BA1EC528EC815D007D1001 /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,14 +389,21 @@
 			files = (
 				395EC1AB28E9D38B00F32840 /* SearchViewController.swift in Sources */,
 				395EC1AD28E9E09600F32840 /* Colors.swift in Sources */,
+				39BA1ED028EC902D007D1001 /* ExperienceTableViewCell.swift in Sources */,
 				395EC19628E9D0F100F32840 /* LoginViewController.swift in Sources */,
+				39BA1ECC28EC8490007D1001 /* Ratio.swift in Sources */,
 				395EC1A028E9D2A300F32840 /* MyPageViewController.swift in Sources */,
 				395EC1A228E9D2FA00F32840 /* HomeTabBarController.swift in Sources */,
 				395EC19928E9D13B00F32840 /* WriteExperienceViewController.swift in Sources */,
 				395EC17E28E88C1E00F32840 /* MainViewController.swift in Sources */,
 				395EC17A28E88C1E00F32840 /* AppDelegate.swift in Sources */,
+				39BA1ECA28EC8475007D1001 /* Extensions.swift in Sources */,
+				39BA1ED728EC98D7007D1001 /* Constant.swift in Sources */,
 				395EC19328E9CEA400F32840 /* HomeViewController.swift in Sources */,
 				395EC1A628E9D33C00F32840 /* HallOfFameViewController.swift in Sources */,
+				39BA1ED528EC98A9007D1001 /* CategoryBadgeView.swift in Sources */,
+				39BA1ED228EC96DB007D1001 /* Singleton.swift in Sources */,
+				39BA1EBF28EC8066007D1001 /* NSAttributeString.swift in Sources */,
 				395EC1A928E9D37000F32840 /* RequestExperienceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,8 +539,7 @@
 				INFOPLIST_FILE = "SellStroy-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -481,9 +548,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "min.personal.SellStroy-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -499,8 +569,7 @@
 				INFOPLIST_FILE = "SellStroy-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -509,9 +578,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "min.personal.SellStroy-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
