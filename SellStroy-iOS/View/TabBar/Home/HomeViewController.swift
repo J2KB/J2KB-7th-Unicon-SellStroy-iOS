@@ -14,10 +14,12 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        
+        setUpView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         // 기본 로고 화이트 세팅
         setLogoWhite()
-        setUpView()
     }
     
     func setUpView() {
@@ -33,7 +35,7 @@ class HomeViewController: UIViewController {
         }
         
         let homeTitleLabel = UILabel()
-        homeTitleLabel.frame = .init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 83)
+        homeTitleLabel.frame = .init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 68.adjustWidth)
         homeTitleLabel.numberOfLines = 2
         homeTitleLabel.attributedText = .attributeFontStyle(font: .SSMedium, size: 20, text: "오늘도 좋은 하루 보내세요,\n소소한일상님!", lineHeight: 30)
         homeTitleLabel.textColor = .white
@@ -47,6 +49,7 @@ class HomeViewController: UIViewController {
         homeTableView.estimatedRowHeight = 186
         homeTableView.rowHeight = UITableView.automaticDimension
         homeTableView.separatorStyle = .none
+        homeTableView.contentInset = .init(top: 15, left: 0, bottom: 15, right: 0)
         self.view.addSubview(homeTableView)
         homeTableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
@@ -55,7 +58,7 @@ class HomeViewController: UIViewController {
         homeTitleLabel.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview()
             make.left.right.equalToSuperview().inset(21)
-            make.height.equalTo(83.adjustHeight)
+            make.height.equalTo(68.adjustWidth)
         }
         
         let floatingButton = UIButton()
@@ -67,6 +70,11 @@ class HomeViewController: UIViewController {
         floatingButton.setAttributedTitle(.attributeFontStyle(font: .SSSemiBold, size: 14, text: "경험쓰기", lineHeight: 20), for: .normal)
         floatingButton.imageEdgeInsets = .init(top: 0, left: 0, bottom: 0, right: 8)
         floatingButton.setTitleColor(.white, for: .normal)
+        floatingButton.clipsToBounds = false
+        floatingButton.layer.shadowColor = UIColor.black.withAlphaComponent(0.25).cgColor
+        floatingButton.layer.shadowOpacity = 1
+        floatingButton.layer.shadowRadius = 12
+        floatingButton.layer.shadowOffset = CGSize(width: 3, height: 4)
         self.view.addSubview(floatingButton)
         floatingButton.snp.makeConstraints { make in
             make.height.equalTo(36.adjustWidth)
@@ -78,17 +86,27 @@ class HomeViewController: UIViewController {
     
     /// 로고 화이트 세팅
     func setLogoWhite() {
-        let leftTabItem = UIBarButtonItem(image: UIImage(named: "logo_white")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: nil)
         self.navigationController?.navigationBar.backgroundColor = .SSRed
+        
+        let leftTabItem = UIBarButtonItem(image: UIImage(named: "logo_white")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: nil)
         self.navigationItem.setLeftBarButton(leftTabItem, animated: true)
+        
+        let rightTabItem = UIBarButtonItem(image: UIImage(named: "notice_white_ic")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: nil)
+        self.navigationItem.setRightBarButton(rightTabItem, animated: true)
+    
         Singleton.shared.changeStatusBarColor(backgroundColor: .SSRed)
     }
     
     /// 로고 블랙 세팅
     func setLogoBlack() {
-        let leftTabItem = UIBarButtonItem(image: UIImage(named: "logo")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: nil)
         self.navigationController?.navigationBar.backgroundColor = .white
+        
+        let leftTabItem = UIBarButtonItem(image: UIImage(named: "logo")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: nil)
         self.navigationItem.setLeftBarButton(leftTabItem, animated: true)
+        
+        let rightTabItem = UIBarButtonItem(image: UIImage(named: "notice_ic")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: nil)
+        self.navigationItem.setRightBarButton(rightTabItem, animated: true)
+        
         Singleton.shared.changeStatusBarColor(backgroundColor: .white)
     }
 }
@@ -110,7 +128,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return reuseCell
         }
         
-        let cell = ExperienceTableViewCell.init(style: .default, reuseIdentifier: identifier)
+        let cell = StoryTableViewCell.init(style: .default, reuseIdentifier: identifier)
         cell.backgroundColor = .SSGray1
         cell.selectionStyle = .none
         
@@ -131,10 +149,16 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y > maskViewHeight {
-           setLogoBlack()
+            setLogoBlack()
         } else {
             setLogoWhite()
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyDetailViewController = StoryDetailViewController()
+        storyDetailViewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(storyDetailViewController, animated: true)
     }
     
 }

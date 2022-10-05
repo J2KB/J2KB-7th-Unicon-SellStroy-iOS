@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ExperienceTableViewCell: UITableViewCell {
+class StoryTableViewCell: UITableViewCell {
     
     let cellView = UIView()
 
@@ -35,12 +35,12 @@ class ExperienceTableViewCell: UITableViewCell {
             make.left.equalToSuperview().inset(13)
         }
         
-        let experienceTitle = UILabel()
-        experienceTitle.numberOfLines = 2
-        experienceTitle.attributedText = .attributeFontStyle(font: .SSBold, size: 15, text: "힘들 때 이겨낼 수 있었던 저만의 경험을 소개해드립니다!", lineHeight: 21)
-        experienceTitle.textColor = .black
-        cellView.addSubview(experienceTitle)
-        experienceTitle.snp.makeConstraints { make in
+        let storyTitle = UILabel()
+        storyTitle.numberOfLines = 2
+        storyTitle.attributedText = .attributeFontStyle(font: .SSBold, size: 15, text: "힘들 때 이겨낼 수 있었던 저만의 경험을 소개해드립니다!", lineHeight: 21)
+        storyTitle.textColor = .black
+        cellView.addSubview(storyTitle)
+        storyTitle.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(13)
             make.top.equalTo(categoryBadgeView.snp.bottom).inset(-12)
         }
@@ -51,7 +51,7 @@ class ExperienceTableViewCell: UITableViewCell {
         appealContent.textColor = .black
         cellView.addSubview(appealContent)
         appealContent.snp.makeConstraints { make in
-            make.top.equalTo(experienceTitle.snp.bottom).inset(-6)
+            make.top.equalTo(storyTitle.snp.bottom).inset(-6)
             make.left.right.equalToSuperview().inset(13)
         }
         
@@ -62,7 +62,7 @@ class ExperienceTableViewCell: UITableViewCell {
             make.width.equalTo(18.adjustWidth)
             make.height.equalTo(20.adjustWidth)
             make.left.equalToSuperview().inset(13)
-            make.top.equalTo(experienceTitle.snp.bottom).inset(-58)
+            make.top.equalTo(storyTitle.snp.bottom).inset(-54)
         }
         
         let pointLabel = UILabel()
@@ -79,7 +79,7 @@ class ExperienceTableViewCell: UITableViewCell {
         favoriteIconImageView.snp.makeConstraints { make in
             make.width.height.equalTo(15.adjustWidth)
             make.left.equalTo(pointLabel.snp.right).inset(-10)
-            make.top.equalTo(experienceTitle.snp.bottom).inset(-60)
+            make.top.equalTo(storyTitle.snp.bottom).inset(-56)
         }
         
         let favoriteLabel = UILabel()

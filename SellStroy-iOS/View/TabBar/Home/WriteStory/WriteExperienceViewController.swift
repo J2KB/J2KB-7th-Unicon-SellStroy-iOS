@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WriteExperienceViewController: UIViewController {
+class WriteStoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

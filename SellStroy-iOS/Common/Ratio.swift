@@ -10,6 +10,9 @@ import UIKit
 let ratioWidth = UIScreen.main.bounds.width / 375
 let ratioHeight = UIScreen.main.bounds.height / 512
 
+let topPadding = UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0
+let bottomPadding = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
+
 extension CGFloat {
     var adjustWidth: CGFloat {
         return self * ratioWidth

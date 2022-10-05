@@ -26,10 +26,13 @@
 		39BA1EC828EC815D007D1001 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39BA1EC428EC815D007D1001 /* Pretendard-SemiBold.otf */; };
 		39BA1ECA28EC8475007D1001 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EC928EC8475007D1001 /* Extensions.swift */; };
 		39BA1ECC28EC8490007D1001 /* Ratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1ECB28EC8490007D1001 /* Ratio.swift */; };
-		39BA1ED028EC902D007D1001 /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1ECF28EC902D007D1001 /* ExperienceTableViewCell.swift */; };
+		39BA1ED028EC902D007D1001 /* StoryTableViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1ECF28EC902D007D1001 /* StoryTableViewCellTableViewCell.swift */; };
 		39BA1ED228EC96DB007D1001 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1ED128EC96DB007D1001 /* Singleton.swift */; };
 		39BA1ED528EC98A9007D1001 /* CategoryBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1ED428EC98A9007D1001 /* CategoryBadgeView.swift */; };
 		39BA1ED728EC98D7007D1001 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1ED628EC98D7007D1001 /* Constant.swift */; };
+		39BA1ED928EDDEFB007D1001 /* StoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1ED828EDDEFB007D1001 /* StoryDetailViewController.swift */; };
+		39BA1EDB28EDE742007D1001 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EDA28EDE742007D1001 /* MainButton.swift */; };
+		39BA1EDD28EDEC26007D1001 /* LockContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EDC28EDEC26007D1001 /* LockContentView.swift */; };
 		3EC8A957FE2D134EC0410718 /* Pods_SellStroy_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331991FF239262C470281525 /* Pods_SellStroy_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,10 +60,13 @@
 		39BA1EC428EC815D007D1001 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		39BA1EC928EC8475007D1001 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		39BA1ECB28EC8490007D1001 /* Ratio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratio.swift; sourceTree = "<group>"; };
-		39BA1ECF28EC902D007D1001 /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
+		39BA1ECF28EC902D007D1001 /* StoryTableViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCellTableViewCell.swift; sourceTree = "<group>"; };
 		39BA1ED128EC96DB007D1001 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		39BA1ED428EC98A9007D1001 /* CategoryBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBadgeView.swift; sourceTree = "<group>"; };
 		39BA1ED628EC98D7007D1001 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		39BA1ED828EDDEFB007D1001 /* StoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDetailViewController.swift; sourceTree = "<group>"; };
+		39BA1EDA28EDE742007D1001 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		39BA1EDC28EDEC26007D1001 /* LockContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockContentView.swift; sourceTree = "<group>"; };
 		F0BBC578FE292801DC294ED7 /* Pods-SellStroy-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellStroy-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SellStroy-iOS/Pods-SellStroy-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,8 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				395EC19228E9CEA400F32840 /* HomeViewController.swift */,
-				39BA1ECF28EC902D007D1001 /* ExperienceTableViewCell.swift */,
-				395EC19728E9D11400F32840 /* WriteExperience */,
+				39BA1ECF28EC902D007D1001 /* StoryTableViewCellTableViewCell.swift */,
+				39BA1ED828EDDEFB007D1001 /* StoryDetailViewController.swift */,
+				395EC19728E9D11400F32840 /* WriteStory */,
+				39BA1EDC28EDEC26007D1001 /* LockContentView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -151,12 +159,12 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		395EC19728E9D11400F32840 /* WriteExperience */ = {
+		395EC19728E9D11400F32840 /* WriteStory */ = {
 			isa = PBXGroup;
 			children = (
 				395EC19828E9D13B00F32840 /* WriteExperienceViewController.swift */,
 			);
-			path = WriteExperience;
+			path = WriteStory;
 			sourceTree = "<group>";
 		};
 		395EC19A28E9D14400F32840 /* MyPage */ = {
@@ -176,6 +184,7 @@
 				39BA1ECB28EC8490007D1001 /* Ratio.swift */,
 				39BA1ED128EC96DB007D1001 /* Singleton.swift */,
 				39BA1ED628EC98D7007D1001 /* Constant.swift */,
+				39BA1EDA28EDE742007D1001 /* MainButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -213,12 +222,12 @@
 			path = "Hall of Fame";
 			sourceTree = "<group>";
 		};
-		395EC1A728E9D35200F32840 /* Request Experience */ = {
+		395EC1A728E9D35200F32840 /* Request Story */ = {
 			isa = PBXGroup;
 			children = (
 				395EC1A828E9D37000F32840 /* RequestExperienceViewController.swift */,
 			);
-			path = "Request Experience";
+			path = "Request Story";
 			sourceTree = "<group>";
 		};
 		39BA1EC028EC811E007D1001 /* Fonts */ = {
@@ -239,7 +248,7 @@
 				395EC19128E9CE9000F32840 /* Home */,
 				395EC1A328E9D30700F32840 /* Search */,
 				395EC1A428E9D32400F32840 /* Hall of Fame */,
-				395EC1A728E9D35200F32840 /* Request Experience */,
+				395EC1A728E9D35200F32840 /* Request Story */,
 				395EC19A28E9D14400F32840 /* MyPage */,
 			);
 			path = TabBar;
@@ -389,17 +398,20 @@
 			files = (
 				395EC1AB28E9D38B00F32840 /* SearchViewController.swift in Sources */,
 				395EC1AD28E9E09600F32840 /* Colors.swift in Sources */,
-				39BA1ED028EC902D007D1001 /* ExperienceTableViewCell.swift in Sources */,
+				39BA1ED028EC902D007D1001 /* StoryTableViewCellTableViewCell.swift in Sources */,
 				395EC19628E9D0F100F32840 /* LoginViewController.swift in Sources */,
+				39BA1EDB28EDE742007D1001 /* MainButton.swift in Sources */,
 				39BA1ECC28EC8490007D1001 /* Ratio.swift in Sources */,
 				395EC1A028E9D2A300F32840 /* MyPageViewController.swift in Sources */,
 				395EC1A228E9D2FA00F32840 /* HomeTabBarController.swift in Sources */,
 				395EC19928E9D13B00F32840 /* WriteExperienceViewController.swift in Sources */,
 				395EC17E28E88C1E00F32840 /* MainViewController.swift in Sources */,
+				39BA1ED928EDDEFB007D1001 /* StoryDetailViewController.swift in Sources */,
 				395EC17A28E88C1E00F32840 /* AppDelegate.swift in Sources */,
 				39BA1ECA28EC8475007D1001 /* Extensions.swift in Sources */,
 				39BA1ED728EC98D7007D1001 /* Constant.swift in Sources */,
 				395EC19328E9CEA400F32840 /* HomeViewController.swift in Sources */,
+				39BA1EDD28EDEC26007D1001 /* LockContentView.swift in Sources */,
 				395EC1A628E9D33C00F32840 /* HallOfFameViewController.swift in Sources */,
 				39BA1ED528EC98A9007D1001 /* CategoryBadgeView.swift in Sources */,
 				39BA1ED228EC96DB007D1001 /* Singleton.swift in Sources */,

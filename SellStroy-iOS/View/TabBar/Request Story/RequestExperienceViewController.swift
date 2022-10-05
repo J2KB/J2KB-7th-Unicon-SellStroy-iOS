@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RequestExperienceViewController: UIViewController {
+class RequestStoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
