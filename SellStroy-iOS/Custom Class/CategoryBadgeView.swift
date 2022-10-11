@@ -9,6 +9,8 @@ import UIKit
 
 class CategoryBadgeView: UIView {
     
+    let categoryLabel = UILabel()
+    
     var type: CategoryType = .lifeStyle
     
     override init(frame: CGRect) {
@@ -25,13 +27,16 @@ class CategoryBadgeView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func replayType(type: CategoryType) {
+        categoryLabel.attributedText = .attributeFontStyle(font: .SSBold, size: 10, text: type.rawValue, lineHeight: 10)
+    }
+    
     func setUpView() {
         
         self.backgroundColor = .SSRed
         self.clipsToBounds = true
         self.layer.cornerRadius = 5
         
-        let categoryLabel = UILabel()
         categoryLabel.attributedText = .attributeFontStyle(font: .SSBold, size: 10, text: type.rawValue, lineHeight: 10)
         categoryLabel.textColor = .white
         self.addSubview(categoryLabel)

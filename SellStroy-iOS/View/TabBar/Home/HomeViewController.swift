@@ -22,6 +22,16 @@ class HomeViewController: UIViewController {
         setLogoWhite()
     }
     
+    @objc func selectFloatingButton() {
+        presentWriteStoryViewController()
+    }
+    
+    func presentWriteStoryViewController() {
+        let writeStoryViewController = WriteStoryViewController()
+        writeStoryViewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(writeStoryViewController, animated: true)
+    }
+    
     func setUpView() {
         
         let topMaskView = UIView()
@@ -82,6 +92,7 @@ class HomeViewController: UIViewController {
             make.right.equalToSuperview().inset(15)
             make.bottom.equalToSuperview().inset(15)
         }
+        floatingButton.addTarget(self, action: #selector(selectFloatingButton), for: .touchUpInside)
     }
     
     /// 로고 화이트 세팅

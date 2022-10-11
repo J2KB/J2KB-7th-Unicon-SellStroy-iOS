@@ -12,7 +12,7 @@
 		395EC18328E88C2000F32840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395EC18228E88C2000F32840 /* Assets.xcassets */; };
 		395EC19328E9CEA400F32840 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC19228E9CEA400F32840 /* HomeViewController.swift */; };
 		395EC19628E9D0F100F32840 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC19528E9D0F100F32840 /* LoginViewController.swift */; };
-		395EC19928E9D13B00F32840 /* WriteExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC19828E9D13B00F32840 /* WriteExperienceViewController.swift */; };
+		395EC19928E9D13B00F32840 /* WriteStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC19828E9D13B00F32840 /* WriteStoryViewController.swift */; };
 		395EC1A028E9D2A300F32840 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC19F28E9D2A300F32840 /* MyPageViewController.swift */; };
 		395EC1A228E9D2FA00F32840 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC1A128E9D2FA00F32840 /* HomeTabBarController.swift */; };
 		395EC1A628E9D33C00F32840 /* HallOfFameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EC1A528E9D33C00F32840 /* HallOfFameViewController.swift */; };
@@ -33,6 +33,7 @@
 		39BA1ED928EDDEFB007D1001 /* StoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1ED828EDDEFB007D1001 /* StoryDetailViewController.swift */; };
 		39BA1EDB28EDE742007D1001 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EDA28EDE742007D1001 /* MainButton.swift */; };
 		39BA1EDD28EDEC26007D1001 /* LockContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EDC28EDEC26007D1001 /* LockContentView.swift */; };
+		39BA1EDF28F5C836007D1001 /* UnderLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EDE28F5C836007D1001 /* UnderLineTextField.swift */; };
 		3EC8A957FE2D134EC0410718 /* Pods_SellStroy_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331991FF239262C470281525 /* Pods_SellStroy_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +47,7 @@
 		395EC18728E88C2000F32840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		395EC19228E9CEA400F32840 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		395EC19528E9D0F100F32840 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		395EC19828E9D13B00F32840 /* WriteExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteExperienceViewController.swift; sourceTree = "<group>"; };
+		395EC19828E9D13B00F32840 /* WriteStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteStoryViewController.swift; sourceTree = "<group>"; };
 		395EC19F28E9D2A300F32840 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		395EC1A128E9D2FA00F32840 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		395EC1A528E9D33C00F32840 /* HallOfFameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallOfFameViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		39BA1ED828EDDEFB007D1001 /* StoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDetailViewController.swift; sourceTree = "<group>"; };
 		39BA1EDA28EDE742007D1001 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		39BA1EDC28EDEC26007D1001 /* LockContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockContentView.swift; sourceTree = "<group>"; };
+		39BA1EDE28F5C836007D1001 /* UnderLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderLineTextField.swift; sourceTree = "<group>"; };
 		F0BBC578FE292801DC294ED7 /* Pods-SellStroy-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellStroy-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SellStroy-iOS/Pods-SellStroy-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,7 +164,7 @@
 		395EC19728E9D11400F32840 /* WriteStory */ = {
 			isa = PBXGroup;
 			children = (
-				395EC19828E9D13B00F32840 /* WriteExperienceViewController.swift */,
+				395EC19828E9D13B00F32840 /* WriteStoryViewController.swift */,
 			);
 			path = WriteStory;
 			sourceTree = "<group>";
@@ -184,7 +186,6 @@
 				39BA1ECB28EC8490007D1001 /* Ratio.swift */,
 				39BA1ED128EC96DB007D1001 /* Singleton.swift */,
 				39BA1ED628EC98D7007D1001 /* Constant.swift */,
-				39BA1EDA28EDE742007D1001 /* MainButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -257,7 +258,9 @@
 		39BA1ED328EC986D007D1001 /* Custom Class */ = {
 			isa = PBXGroup;
 			children = (
+				39BA1EDA28EDE742007D1001 /* MainButton.swift */,
 				39BA1ED428EC98A9007D1001 /* CategoryBadgeView.swift */,
+				39BA1EDE28F5C836007D1001 /* UnderLineTextField.swift */,
 			);
 			path = "Custom Class";
 			sourceTree = "<group>";
@@ -404,7 +407,8 @@
 				39BA1ECC28EC8490007D1001 /* Ratio.swift in Sources */,
 				395EC1A028E9D2A300F32840 /* MyPageViewController.swift in Sources */,
 				395EC1A228E9D2FA00F32840 /* HomeTabBarController.swift in Sources */,
-				395EC19928E9D13B00F32840 /* WriteExperienceViewController.swift in Sources */,
+				39BA1EDF28F5C836007D1001 /* UnderLineTextField.swift in Sources */,
+				395EC19928E9D13B00F32840 /* WriteStoryViewController.swift in Sources */,
 				395EC17E28E88C1E00F32840 /* MainViewController.swift in Sources */,
 				39BA1ED928EDDEFB007D1001 /* StoryDetailViewController.swift in Sources */,
 				395EC17A28E88C1E00F32840 /* AppDelegate.swift in Sources */,
