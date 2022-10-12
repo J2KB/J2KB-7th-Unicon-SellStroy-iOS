@@ -32,4 +32,9 @@ extension UIColor {
         // rgba(104, 104, 104, 1)
         return UIColor(red: 104.0 / 255.0, green: 104.0 / 255.0, blue: 104.0 / 255.0, alpha: 1)
     }
+    
+    class var SSGray5: UIColor {
+        // rgba(147, 147, 147, 1)
+        return UIColor(red: 147.0 / 255.0, green: 147.0 / 255.0, blue: 147.0 / 255.0, alpha: 1)
+    }
 }

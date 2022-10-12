@@ -64,6 +64,7 @@ class HomeViewController: UIViewController {
         homeTableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+        homeTableView.contentOffset.y = 0
         
         homeTitleLabel.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview()

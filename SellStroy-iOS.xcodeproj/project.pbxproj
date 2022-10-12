@@ -34,6 +34,8 @@
 		39BA1EDB28EDE742007D1001 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EDA28EDE742007D1001 /* MainButton.swift */; };
 		39BA1EDD28EDEC26007D1001 /* LockContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EDC28EDEC26007D1001 /* LockContentView.swift */; };
 		39BA1EDF28F5C836007D1001 /* UnderLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EDE28F5C836007D1001 /* UnderLineTextField.swift */; };
+		39BA1EE128F71DB9007D1001 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EE028F71DB9007D1001 /* TextView.swift */; };
+		39BA1EE328F722AC007D1001 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EE228F722AC007D1001 /* GuideView.swift */; };
 		3EC8A957FE2D134EC0410718 /* Pods_SellStroy_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331991FF239262C470281525 /* Pods_SellStroy_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		39BA1EDA28EDE742007D1001 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		39BA1EDC28EDEC26007D1001 /* LockContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockContentView.swift; sourceTree = "<group>"; };
 		39BA1EDE28F5C836007D1001 /* UnderLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderLineTextField.swift; sourceTree = "<group>"; };
+		39BA1EE028F71DB9007D1001 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		39BA1EE228F722AC007D1001 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		F0BBC578FE292801DC294ED7 /* Pods-SellStroy-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellStroy-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SellStroy-iOS/Pods-SellStroy-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,6 +265,8 @@
 				39BA1EDA28EDE742007D1001 /* MainButton.swift */,
 				39BA1ED428EC98A9007D1001 /* CategoryBadgeView.swift */,
 				39BA1EDE28F5C836007D1001 /* UnderLineTextField.swift */,
+				39BA1EE028F71DB9007D1001 /* TextView.swift */,
+				39BA1EE228F722AC007D1001 /* GuideView.swift */,
 			);
 			path = "Custom Class";
 			sourceTree = "<group>";
@@ -402,6 +408,7 @@
 				395EC1AB28E9D38B00F32840 /* SearchViewController.swift in Sources */,
 				395EC1AD28E9E09600F32840 /* Colors.swift in Sources */,
 				39BA1ED028EC902D007D1001 /* StoryTableViewCellTableViewCell.swift in Sources */,
+				39BA1EE328F722AC007D1001 /* GuideView.swift in Sources */,
 				395EC19628E9D0F100F32840 /* LoginViewController.swift in Sources */,
 				39BA1EDB28EDE742007D1001 /* MainButton.swift in Sources */,
 				39BA1ECC28EC8490007D1001 /* Ratio.swift in Sources */,
@@ -419,6 +426,7 @@
 				395EC1A628E9D33C00F32840 /* HallOfFameViewController.swift in Sources */,
 				39BA1ED528EC98A9007D1001 /* CategoryBadgeView.swift in Sources */,
 				39BA1ED228EC96DB007D1001 /* Singleton.swift in Sources */,
+				39BA1EE128F71DB9007D1001 /* TextView.swift in Sources */,
 				39BA1EBF28EC8066007D1001 /* NSAttributeString.swift in Sources */,
 				395EC1A928E9D37000F32840 /* RequestExperienceViewController.swift in Sources */,
 			);

@@ -16,13 +16,15 @@ class WriteStoryViewController: UIViewController {
     let categoryBadge = CategoryBadgeView(type: .lifeStyle)
     let categoryLabel = UILabel()
     let arrowDownImageView = UIImageView(image: UIImage(named: "down_arrow_ic"))
-    let storyContentTextView = UITextView()
+    let storyTitleTextField = UnderLineTextField()
+    let storyContentTextView = TextView()
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         self.navigationController?.navigationBar.backgroundColor = .white
+        self.navigationController?.navigationBar.isTranslucent = false
         Singleton.shared.changeStatusBarColor(backgroundColor: .white)
         self.title = "경험쓰기"
         
@@ -92,7 +94,6 @@ class WriteStoryViewController: UIViewController {
         }
         
         // 제목
-        let storyTitleTextField = UnderLineTextField()
         storyTitleTextField.setPlaceholder(placeholder: "제목을 입력해주세요", color: .SSGray2)
         storyTitleTextField.tintColor = .SSRed
         writeStoryScrollView.addSubview(storyTitleTextField)
@@ -101,12 +102,20 @@ class WriteStoryViewController: UIViewController {
             make.left.right.equalTo(self.view).inset(25)
         }
         
+        // 작성 가이드
+        let guideView = GuideView()
+        writeStoryScrollView.addSubview(guideView)
+        guideView.snp.makeConstraints { make in
+            make.top.equalTo(storyTitleTextField.snp.bottom).inset(-11)
+            make.left.right.equalTo(self.view).inset(13)
+        }
+        
         // 본문 요약
         let storySummaryLabel = UILabel()
         storySummaryLabel.attributedText = .attributeFontStyle(font: .SSSemiBold, size: 13, text: "본문 요약", lineHeight: 22)
         writeStoryScrollView.addSubview(storySummaryLabel)
         storySummaryLabel.snp.makeConstraints { make in
-            make.top.equalTo(storyTitleTextField.snp.bottom).inset(-23)
+            make.top.equalTo(guideView.snp.bottom).inset(-18)
             make.left.equalToSuperview().inset(25)
         }
         
@@ -119,13 +128,22 @@ class WriteStoryViewController: UIViewController {
             make.top.equalTo(storySummaryLabel.snp.top).inset(2)
         }
         
-        let storySummaryTextView = UITextView()
-        storySummaryTextView.backgroundColor = .systemBlue
+        let storySummaryTextView = TextView()
+        storySummaryTextView.setPlaceHolder(placeholder: "본문 요약글을 입력해주세요")
         writeStoryScrollView.addSubview(storySummaryTextView)
         storySummaryTextView.snp.makeConstraints { make in
             make.left.right.equalTo(self.view).inset(25)
             make.top.equalTo(storySummaryLabel.snp.bottom).inset(-7)
             make.height.equalTo(167.adjustWidth)
+        }
+        
+        let storySummaryUnderLineView = UIView()
+        storySummaryUnderLineView.backgroundColor = .SSGray2
+        writeStoryScrollView.addSubview(storySummaryUnderLineView)
+        storySummaryUnderLineView.snp.makeConstraints { make in
+            make.top.equalTo(storySummaryTextView.snp.bottom)
+            make.height.equalTo(1)
+            make.left.right.equalTo(self.view).inset(25)
         }
         
         // 본문 내용
@@ -146,9 +164,9 @@ class WriteStoryViewController: UIViewController {
             make.top.equalTo(storyContentLabel.snp.top).inset(2)
         }
         
-        storyContentTextView.delegate = self
+        storyContentTextView.frame = .init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 354.adjustWidth)
+        storyContentTextView.setPlaceHolder(placeholder: "본문 내용을 입력해주세요")
         storyContentTextView.isScrollEnabled = false
-        storyContentTextView.backgroundColor = .systemBlue
         writeStoryScrollView.addSubview(storyContentTextView)
         storyContentTextView.snp.makeConstraints { make in
             make.left.right.equalTo(self.view).inset(25)
@@ -164,8 +182,54 @@ class WriteStoryViewController: UIViewController {
         footerView.snp.makeConstraints { make in
             make.left.right.equalTo(self.view)
             make.top.equalTo(storyContentTextView.snp.bottom)
-            make.height.equalTo(236.adjustWidth)
-            make.bottom.equalToSuperview()
+            make.height.equalTo(236.adjustWidth + bottomPadding)
+            make.bottom.equalToSuperview().inset(bottomPadding)
+        }
+        
+        let pointInfoTitle = UILabel()
+        pointInfoTitle.attributedText = .attributeFontStyle(font: .SSSemiBold, size: 12, text: "포인트 안내", lineHeight: 22)
+        pointInfoTitle.textColor = .SSGray5
+        footerView.addSubview(pointInfoTitle)
+        pointInfoTitle.snp.makeConstraints { make in
+            make.top.equalToSuperview().inset(22)
+            make.left.right.equalToSuperview().inset(25)
+        }
+        
+        let pointString = """
+        · 경험글을 작성했을 경우 350 포인트가 지급됩니다.
+        · 다른 사람이 경험글을 구매 했을 경우 건당 200포인트씩 지급됩니다.
+        """
+        let pointInfo = UILabel()
+        pointInfo.numberOfLines = 2
+        pointInfo.attributedText = .attributeFontStyle(font: .SSSemiBold, size: 10, text: pointString, lineHeight: 17)
+        pointInfo.textColor = .SSGray5
+        footerView.addSubview(pointInfo)
+        pointInfo.snp.makeConstraints { make in
+            make.top.equalTo(pointInfoTitle.snp.bottom).inset(-5)
+            make.left.right.equalToSuperview().inset(25)
+        }
+        
+        let noteTitle = UILabel()
+        noteTitle.attributedText = .attributeFontStyle(font: .SSSemiBold, size: 12, text: "유의사항", lineHeight: 22)
+        noteTitle.textColor = .SSGray5
+        footerView.addSubview(noteTitle)
+        noteTitle.snp.makeConstraints { make in
+            make.top.equalTo(pointInfo.snp.bottom).inset(-14)
+            make.left.right.equalToSuperview().inset(25)
+        }
+        
+        let noteString = """
+        · 경험글의 구매 이력이 있을 경우 수정/삭제가 불가능합니다.
+        · 신고가 여러번 접수 되었을 경우 작성자의 동의 없이 숨김처리가 될 수 있습니다.
+        """
+        let noteInfo = UILabel()
+        noteInfo.numberOfLines = 2
+        noteInfo.attributedText = .attributeFontStyle(font: .SSSemiBold, size: 10, text: noteString, lineHeight: 17)
+        noteInfo.textColor = .SSGray5
+        footerView.addSubview(noteInfo)
+        noteInfo.snp.makeConstraints { make in
+            make.top.equalTo(noteTitle.snp.bottom).inset(-5)
+            make.left.right.equalToSuperview().inset(25)
         }
         
         let doneButton = MainButton()
@@ -174,24 +238,7 @@ class WriteStoryViewController: UIViewController {
         footerView.addSubview(doneButton)
         doneButton.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(20)
-            make.bottom.equalToSuperview()
-        }
-    }
-}
-
-extension WriteStoryViewController: UITextViewDelegate {
-    func textViewDidChange(_ textView: UITextView) {
-        let size: CGSize = .init(width: self.view.frame.height, height: .infinity)
-        let estimatedSize = textView.sizeThatFits(size)
-        
-        textView.constraints.forEach { constraint in
-            if estimatedSize.height <= 354 {
-                
-            } else {
-                if constraint.firstAttribute == .height {
-                    constraint.constant = estimatedSize.height
-                }
-            }
+            make.top.equalTo(noteInfo.snp.bottom).inset(-47.adjustWidth)
         }
     }
 }
