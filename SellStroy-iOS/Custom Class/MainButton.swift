@@ -24,4 +24,8 @@ class MainButton: UIButton {
             make.height.equalTo(41)
         }
     }
+    
+    func setTitle(title: String) {
+        self.setAttributedTitle(.attributeFontStyle(font: .SSBold, size: 15, text: title, lineHeight: 24), for: .normal)
+    }
 }

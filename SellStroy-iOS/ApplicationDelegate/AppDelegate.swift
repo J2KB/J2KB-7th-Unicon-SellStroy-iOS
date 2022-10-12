@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainViewController = MainViewController()
         window?.rootViewController = mainViewController
         window?.makeKeyAndVisible()
-        mainViewController.presentHomeViewController()
+        mainViewController.presentLoginViewController()
         
         return true
     }
