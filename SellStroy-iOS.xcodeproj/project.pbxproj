@@ -39,6 +39,8 @@
 		39BA1EE528FA87A5007D1001 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EE428FA87A5007D1001 /* RegisterViewController.swift */; };
 		39BA1EE728FA87EB007D1001 /* TexField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EE628FA87EB007D1001 /* TexField.swift */; };
 		39BA1EE928FA8D6B007D1001 /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EE828FA8D6B007D1001 /* CheckBoxButton.swift */; };
+		39BA1EEB28FA98FA007D1001 /* SingleStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EEA28FA98FA007D1001 /* SingleStoryView.swift */; };
+		39BA1EEE28FA9B5D007D1001 /* PurchaseStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA1EED28FA9B5D007D1001 /* PurchaseStoryViewController.swift */; };
 		3EC8A957FE2D134EC0410718 /* Pods_SellStroy_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331991FF239262C470281525 /* Pods_SellStroy_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,8 @@
 		39BA1EE428FA87A5007D1001 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		39BA1EE628FA87EB007D1001 /* TexField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexField.swift; sourceTree = "<group>"; };
 		39BA1EE828FA8D6B007D1001 /* CheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
+		39BA1EEA28FA98FA007D1001 /* SingleStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStoryView.swift; sourceTree = "<group>"; };
+		39BA1EED28FA9B5D007D1001 /* PurchaseStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseStoryViewController.swift; sourceTree = "<group>"; };
 		F0BBC578FE292801DC294ED7 /* Pods-SellStroy-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellStroy-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SellStroy-iOS/Pods-SellStroy-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,8 +161,9 @@
 				395EC19228E9CEA400F32840 /* HomeViewController.swift */,
 				39BA1ECF28EC902D007D1001 /* StoryTableViewCellTableViewCell.swift */,
 				39BA1ED828EDDEFB007D1001 /* StoryDetailViewController.swift */,
-				395EC19728E9D11400F32840 /* WriteStory */,
 				39BA1EDC28EDEC26007D1001 /* LockContentView.swift */,
+				395EC19728E9D11400F32840 /* WriteStory */,
+				39BA1EEC28FA99DC007D1001 /* PurchaseStory */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -276,8 +281,17 @@
 				39BA1EE228F722AC007D1001 /* GuideView.swift */,
 				39BA1EE628FA87EB007D1001 /* TexField.swift */,
 				39BA1EE828FA8D6B007D1001 /* CheckBoxButton.swift */,
+				39BA1EEA28FA98FA007D1001 /* SingleStoryView.swift */,
 			);
 			path = "Custom Class";
+			sourceTree = "<group>";
+		};
+		39BA1EEC28FA99DC007D1001 /* PurchaseStory */ = {
+			isa = PBXGroup;
+			children = (
+				39BA1EED28FA9B5D007D1001 /* PurchaseStoryViewController.swift */,
+			);
+			path = PurchaseStory;
 			sourceTree = "<group>";
 		};
 		98974275C605D550EF661409 /* Frameworks */ = {
@@ -420,6 +434,7 @@
 				39BA1EE328F722AC007D1001 /* GuideView.swift in Sources */,
 				395EC19628E9D0F100F32840 /* LoginViewController.swift in Sources */,
 				39BA1EDB28EDE742007D1001 /* MainButton.swift in Sources */,
+				39BA1EEB28FA98FA007D1001 /* SingleStoryView.swift in Sources */,
 				39BA1ECC28EC8490007D1001 /* Ratio.swift in Sources */,
 				395EC1A028E9D2A300F32840 /* MyPageViewController.swift in Sources */,
 				39BA1EE728FA87EB007D1001 /* TexField.swift in Sources */,
@@ -428,6 +443,7 @@
 				395EC19928E9D13B00F32840 /* WriteStoryViewController.swift in Sources */,
 				395EC17E28E88C1E00F32840 /* MainViewController.swift in Sources */,
 				39BA1EE928FA8D6B007D1001 /* CheckBoxButton.swift in Sources */,
+				39BA1EEE28FA9B5D007D1001 /* PurchaseStoryViewController.swift in Sources */,
 				39BA1ED928EDDEFB007D1001 /* StoryDetailViewController.swift in Sources */,
 				395EC17A28E88C1E00F32840 /* AppDelegate.swift in Sources */,
 				39BA1ECA28EC8475007D1001 /* Extensions.swift in Sources */,

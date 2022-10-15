@@ -12,6 +12,7 @@ class StoryDetailViewController: UIViewController {
     let storyContentScrollView = UIScrollView()
     let separatorView = UIView()
     let lockContentView = LockContentView()
+    let sellButton = MainButton()
     
     let bottomViewHeight = 57 + bottomPadding
 
@@ -32,18 +33,33 @@ class StoryDetailViewController: UIViewController {
         checkPurchaseStory()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        checkPurchaseStory()
+    }
+    
     @objc func selectBackButton() {
         self.navigationController?.popViewController(animated: true)
     }
     
     @objc func selectSellButton() {
-        lockContentView.isHidden = true
-        storyContentScrollView.isScrollEnabled = true
+        let purchaseStoryViewController = PurchaseStoryViewController()
+        self.navigationController?.pushViewController(purchaseStoryViewController, animated: true)
     }
     
     func checkPurchaseStory() {
-        lockContentView.isHidden = false
-        storyContentScrollView.isScrollEnabled = false
+        if UserDefaults.standard.bool(forKey: "purchase") {
+            lockContentView.isHidden = true
+            storyContentScrollView.isScrollEnabled = true
+            
+            sellButton.backgroundColor = .SSGray2
+            sellButton.setTitle(title: "구매완료")
+
+            // 테스트를 위해 지우기
+            UserDefaults.standard.removeObject(forKey: "purchase")
+        } else {
+            lockContentView.isHidden = false
+            storyContentScrollView.isScrollEnabled = false
+        }
     }
     
     func setUpBottomView() {
@@ -67,7 +83,6 @@ class StoryDetailViewController: UIViewController {
             make.height.equalTo(1)
         }
     
-        let sellButton = MainButton()
         sellButton.setAttributedTitle(.attributeFontStyle(font: .SSBold, size: 15, text: "200포인트로 구매하기", lineHeight: 24), for: .normal)
         sellButton.setTitleColor(.white, for: .normal)
         bottomView.addSubview(sellButton)
