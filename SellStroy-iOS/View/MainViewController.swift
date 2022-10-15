@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
     }
 
     func presentLoginViewController() {
-        let loginViewController = LoginViewController()
+        let loginViewController = UINavigationController(rootViewController: LoginViewController())
         loginViewController.modalPresentationStyle = .fullScreen
         loginViewController.modalTransitionStyle = .crossDissolve
         self.present(loginViewController, animated: true)

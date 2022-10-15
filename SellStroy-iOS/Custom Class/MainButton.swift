@@ -25,7 +25,8 @@ class MainButton: UIButton {
         }
     }
     
-    func setTitle(title: String) {
+    func setTitle(title: String, color: UIColor = .white) {
         self.setAttributedTitle(.attributeFontStyle(font: .SSBold, size: 15, text: title, lineHeight: 24), for: .normal)
+        self.setTitleColor(color, for: .normal)
     }
 }

@@ -41,10 +41,12 @@ class LoginViewController: UIViewController {
     }
     
     @objc func selectTestButton() {
-        self.dismiss(animated: true) {
-            let appdelegate = UIApplication.shared.delegate as! AppDelegate
-            guard let rootviewController = appdelegate.window?.rootViewController as? MainViewController else { return }
-            rootviewController.presentHomeViewController()
-        }
+        let registerViewController = RegisterViewController()
+        self.navigationController?.pushViewController(registerViewController, animated: true)
+//        self.dismiss(animated: true) {
+//            let appdelegate = UIApplication.shared.delegate as! AppDelegate
+//            guard let rootviewController = appdelegate.window?.rootViewController as? MainViewController else { return }
+//            rootviewController.presentHomeViewController()
+//        }
     }
 }
