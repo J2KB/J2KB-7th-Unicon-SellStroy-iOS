@@ -19,10 +19,11 @@ class GuideView: UIView {
         self.backgroundColor = .SSGray1
         self.layer.cornerRadius = 5
         self.snp.makeConstraints { make in
-            make.height.equalTo(43.adjustWidth)
+            make.height.equalTo(229.adjustWidth)
         }
         
         let guideButton = UIButton()
+        guideButton.isSelected = false
         self.addSubview(guideButton)
         guideButton.snp.makeConstraints { make in
             make.edges.equalToSuperview()
@@ -55,7 +56,7 @@ class GuideView: UIView {
 - 정보 공유의 글일 경우 자기가 직접 경험했던 것들만 작성해주세요.
 """
         
-        guideContent.isHidden = true
+        guideContent.isHidden = false
         guideContent.numberOfLines = 0
         guideContent.attributedText = .attributeFontStyle(font: .SSBold, size: 11, text: guideContentString, lineHeight: 20)
         guideContent.textColor = .SSGray4
