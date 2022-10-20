@@ -8,6 +8,9 @@
 import UIKit
 
 class PurchaseStoryViewController: UIViewController {
+    
+    var alertView: AlertView!
+    var completeAlert: AlertView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +28,31 @@ class PurchaseStoryViewController: UIViewController {
     }
     
     @objc func selectPurchaseButton() {
+        alertView = AlertView(title: "경험을 구매하시겠습니까?", subTitle: "구매 후 환불이 불가능합니다", okString: "구매하기", okHandler: purchaseStory, cancleString: "취소", cancleHandler: cancelAction)
+        self.navigationController?.view.addSubview(alertView)
+        alertView.showAlert()
+
+    }
+    
+    func purchaseStory() {
         UserDefaults.standard.set(true, forKey: "purchase")
+        alertView.closeAlert()
+        
+        showCompleteAlert()
+    }
+    
+    func cancelAction() {
+        alertView.closeAlert()
+    }
+    
+    func showCompleteAlert() {
+        completeAlert = AlertView(title: "구매가 완료되었습니다!", subTitle: "지금 바로 구매한 경험을 확인해보세요!", okString: "완료", okHandler: completePurchase, cancleString: nil, cancleHandler: nil)
+        self.navigationController?.view.addSubview(completeAlert)
+        completeAlert.showAlert()
+    }
+    
+    func completePurchase() {
+        completeAlert.closeAlert()
         self.navigationController?.popViewController(animated: true)
     }
     
